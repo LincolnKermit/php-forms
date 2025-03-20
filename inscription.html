@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fitness Station</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <h1>Fitness Station</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="/index.php">Accueil</a></li>
+                    <li><a href="/articles.php">Articles</a></li>
+                    <li><a href="/exercices.php">Exercices</a></li>
+                    <li><a href="/programmes.php">Programmes</a></li>
+                    <li><a href="/contact.php">Contact</a></li>
+                    <li><a href="/inscription.php">Inscription</a></li>
+                    <li><a href="/connexion.php">Connexion</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1 style="color: black; text-align: center;" >S'inscrire</h1>
+        <div class="container-forms">
+            <form action="traitement.php" method="post">
+                <h2>Nom</h2>
+                <input type="text" placeholder="Nom" name="lastname" required>
+                <h2>Prénom</h2>
+                <input type="text" placeholder="Prénom" name="firstname" required>
+                <h2>Date de naissance</h2>
+                <input type="date" name="dob" required>
+                <h2>E-mail</h2>
+                <input type="email" placeholder="Email" name="email" required>
+                <h2>Téléphone</h2>
+                <input type="number" placeholder="Téléphone" name="phone" required>
+                <br><br>
+                <div style="text-align: center;">
+                    <button type="submit">Envoyer</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
